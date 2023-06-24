@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta lang="en">
+  <title>Title</title>
+</head>
+<body>
+<table style="border: 1px solid black">
+  <tr th:each="showflowers: ${flowersVariable}">
+    <td th:text="${showflowers}"></td>
+  </tr>
+</table>
+
+<table style="border: 1px solid black">
+  <tr th:each="showCity: ${CityVariable}">
+    <td th:text="${showCity}"></td>
+  </tr>
+</table>
+</body>
+</html>
+
